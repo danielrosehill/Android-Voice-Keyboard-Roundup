@@ -91,6 +91,17 @@ and retries the same cloud endpoint later — that is durability, not fallback.
 Where a project chains fallbacks for text cleanup but not for transcription,
 mark `partial` and say so in `notes`.
 
+### `engine.byok`
+
+The cloud path requires you to supply your own API key, or your own endpoint for
+a self-hosted service. `no` where there is no cloud path at all, or where the
+vendor supplies the service (`pixelboard` rides Google's).
+
+Worth tracking separately from `engine.cloud` because it is the field that tells
+you who pays and who can revoke access. A Cloud badge with no BYOK badge means a
+free tier or a vendor service, which is the arrangement most likely to change
+without notice.
+
 ## `models` — which ASR model
 
 Recorded per the three families asked for, plus a free list.
@@ -111,7 +122,21 @@ Whether dictated text is passed through a language model to strip fillers, fix
 punctuation, translate or restyle. `local` and `cloud` are tracked separately
 because several projects do local STT and cloud cleanup, or the reverse.
 
+## `favourite`
+
+`true` on the single project Daniel actually uses. It is a preference, not a
+ranking, and it is not derived from any other field — `whisperian` scores no
+better on this rubric than several open-source entries, and is the only
+closed-source one. Renders as ⭐ and a badge.
+
 ## Metadata
+
+`source` records how the entry was found: `stars-list`, `search-<date>`, or
+`user-recommendation`. `refresh_list.py` uses it to tell a genuine removal from
+the stars list apart from an entry that was never in it.
+
+`slug` is `null` for anything not on GitHub. `stars` is then `null` too, and the
+tables render `—`.
 
 `stars`, `updated`, `license`, `lang` are snapshots from the GitHub API, stamped
 with `snapshot_date` at the top of `data/projects.json`. They go stale; the

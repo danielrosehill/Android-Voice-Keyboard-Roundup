@@ -10,6 +10,7 @@
       "slug": "BryceWG/BiBi-Keyboard",
       "url": "https://github.com/BryceWG/BiBi-Keyboard",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "Apache-2.0",
@@ -24,7 +25,8 @@
         "local": "yes",
         "cloud": "yes",
         "fallback": "yes",
-        "system_delegated": "yes"
+        "system_delegated": "yes",
+        "byok": "yes"
       },
       "models": {
         "whisper": "unknown",
@@ -54,6 +56,7 @@
       "slug": "SvReenen/Deskdrop",
       "url": "https://github.com/SvReenen/Deskdrop",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "GPL-3.0",
@@ -68,7 +71,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "yes"
+        "system_delegated": "yes",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -95,6 +99,7 @@
       "slug": "DevEmperor/DictateKeyboard",
       "url": "https://github.com/DevEmperor/DictateKeyboard",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "Apache-2.0",
@@ -109,7 +114,8 @@
         "local": "yes",
         "cloud": "yes",
         "fallback": "partial",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -141,6 +147,7 @@
       "slug": "getdictus/dictus-android",
       "url": "https://github.com/getdictus/dictus-android",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "MIT",
@@ -155,7 +162,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -179,6 +187,7 @@
       "slug": "feelime/feelime",
       "url": "https://github.com/feelime/feelime",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "JavaScript",
       "license": "GPL-3.0",
@@ -193,7 +202,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -220,6 +230,7 @@
       "slug": "raviumeshkulkarni-web/Fluence-Android",
       "url": "https://github.com/raviumeshkulkarni-web/Fluence-Android",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "AGPL-3.0",
@@ -234,7 +245,8 @@
         "local": "yes",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -261,6 +273,7 @@
       "slug": "futo-org/android-keyboard",
       "url": "https://github.com/futo-org/android-keyboard",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "C++",
       "license": "FUTO Source First 1.1 (not OSI-approved)",
@@ -275,7 +288,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -299,6 +313,7 @@
       "slug": "futo-org/voice-input",
       "url": "https://github.com/futo-org/voice-input",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "C",
       "license": "FUTO Source First 1.0 (not OSI-approved)",
@@ -313,7 +328,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -337,6 +353,7 @@
       "slug": "kaisoapbox/kaiboard",
       "url": "https://github.com/kaisoapbox/kaiboard",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "BSD-3-Clause",
@@ -351,7 +368,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -375,6 +393,7 @@
       "slug": "Kaljurand/K6nele",
       "url": "https://github.com/Kaljurand/K6nele",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "Apache-2.0",
@@ -389,7 +408,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "no",
@@ -416,6 +436,7 @@
       "slug": "catfewd/nemotron-voice-keyboard",
       "url": "https://github.com/catfewd/nemotron-voice-keyboard",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "C++",
       "license": "MIT",
@@ -430,7 +451,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -456,6 +478,7 @@
       "slug": "notune/android_transcribe_app",
       "url": "https://github.com/notune/android_transcribe_app",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "MIT",
@@ -470,7 +493,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "unknown",
@@ -494,6 +518,7 @@
       "slug": "MaxGoh/Orbie",
       "url": "https://github.com/MaxGoh/Orbie",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "MIT",
@@ -508,7 +533,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -534,6 +560,7 @@
       "slug": "minburg/outspoke",
       "url": "https://github.com/minburg/outspoke",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "unknown",
       "license": "GPL-3.0",
@@ -548,7 +575,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -574,6 +602,7 @@
       "slug": "surma/parakeeb",
       "url": "https://github.com/surma/parakeeb",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "MIT",
@@ -588,7 +617,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -612,6 +642,7 @@
       "slug": "mpnikhil/parakeet-voice-android",
       "url": "https://github.com/mpnikhil/parakeet-voice-android",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "unknown",
       "license": "NOASSERTION",
@@ -626,7 +657,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -652,6 +684,7 @@
       "slug": "Akshayykadam/PixelBoard",
       "url": "https://github.com/Akshayykadam/PixelBoard",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "GPL-3.0",
@@ -666,7 +699,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -692,6 +726,7 @@
       "slug": "georgernstgraf/polished-recognition",
       "url": "https://github.com/georgernstgraf/polished-recognition",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "MIT",
@@ -706,7 +741,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -730,6 +766,7 @@
       "slug": "trevornk/ramblr",
       "url": "https://github.com/trevornk/ramblr",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "GPL-3.0",
@@ -744,7 +781,8 @@
         "local": "yes",
         "cloud": "yes",
         "fallback": "partial",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -776,6 +814,7 @@
       "slug": "sahilchouksey/voice-keyboard",
       "url": "https://github.com/sahilchouksey/voice-keyboard",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "MIT",
@@ -790,7 +829,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "unknown",
@@ -814,6 +854,7 @@
       "slug": "ElishaAz/Sayboard",
       "url": "https://github.com/ElishaAz/Sayboard",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "GPL-3.0",
@@ -828,7 +869,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -854,6 +896,7 @@
       "slug": "Verisonder/SonderKey",
       "url": "https://github.com/Verisonder/SonderKey",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "GPL-3.0",
@@ -868,7 +911,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "no",
@@ -892,6 +936,7 @@
       "slug": "leinss/TobiBoard",
       "url": "https://github.com/leinss/TobiBoard",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "GPL-3.0",
@@ -906,7 +951,8 @@
         "local": "yes",
         "cloud": "yes",
         "fallback": "unknown",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "unknown",
@@ -932,6 +978,7 @@
       "slug": "soupslurpr/Transcribro",
       "url": "https://github.com/soupslurpr/Transcribro",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "unknown",
       "license": "ISC",
@@ -946,7 +993,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -972,6 +1020,7 @@
       "slug": "hatsch/TranSlander",
       "url": "https://github.com/hatsch/TranSlander",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "unknown",
       "license": "Apache-2.0",
@@ -986,7 +1035,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -1010,6 +1060,7 @@
       "slug": "BurgerK1ng16/Vertick-IME",
       "url": "https://github.com/BurgerK1ng16/Vertick-IME",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "GPL-3.0",
@@ -1024,7 +1075,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "no",
@@ -1050,6 +1102,7 @@
       "slug": "rustemar/voice-keyboard",
       "url": "https://github.com/rustemar/voice-keyboard",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "MIT",
@@ -1064,7 +1117,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -1091,6 +1145,7 @@
       "slug": "jagajaga/voiceboard",
       "url": "https://github.com/jagajaga/voiceboard",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "NOASSERTION",
@@ -1105,7 +1160,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "no",
@@ -1131,6 +1187,7 @@
       "slug": "yutungh/voiceflow-keyboard-android",
       "url": "https://github.com/yutungh/voiceflow-keyboard-android",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "MIT",
@@ -1145,7 +1202,8 @@
         "local": "yes",
         "cloud": "yes",
         "fallback": "yes",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -1173,6 +1231,7 @@
       "slug": "Predator04/VoxBoard",
       "url": "https://github.com/Predator04/VoxBoard",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "Apache-2.0",
@@ -1187,7 +1246,8 @@
         "local": "no",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "yes"
+        "system_delegated": "yes",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -1212,6 +1272,7 @@
       "slug": "soanseng/voxpen-android",
       "url": "https://github.com/soanseng/voxpen-android",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "Apache-2.0",
@@ -1226,7 +1287,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -1252,6 +1314,7 @@
       "slug": "Jackfood2/WhisperSpeechToText",
       "url": "https://github.com/Jackfood2/WhisperSpeechToText",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "MIT",
@@ -1266,7 +1329,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -1290,6 +1354,7 @@
       "slug": "j3soon/whisper-to-input",
       "url": "https://github.com/j3soon/whisper-to-input",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Kotlin",
       "license": "GPL-3.0",
@@ -1304,7 +1369,8 @@
         "local": "no",
         "cloud": "yes",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -1331,6 +1397,7 @@
       "slug": "david-digitis/WhisperBoard",
       "url": "https://github.com/david-digitis/WhisperBoard",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "GPL-3.0",
@@ -1345,7 +1412,8 @@
         "local": "yes",
         "cloud": "yes",
         "fallback": "yes",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "yes"
       },
       "models": {
         "whisper": "yes",
@@ -1366,11 +1434,57 @@
       ]
     },
     {
+      "id": "whisperian",
+      "name": "Whisperian",
+      "slug": null,
+      "url": "https://whisperian.app",
+      "source": "user-recommendation",
+      "favourite": true,
+      "category": "keyboard",
+      "lang": "unknown",
+      "license": "Proprietary (closed source)",
+      "stars": null,
+      "updated": "2026-09-22",
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "yes"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "yes",
+        "fallback": "unknown",
+        "system_delegated": "no",
+        "byok": "yes"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [
+          "Deepgram",
+          "Groq (built-in free tier)",
+          "custom OpenAI-compatible providers"
+        ],
+        "runtime": "unknown"
+      },
+      "llm_postprocess": {
+        "local": "unknown",
+        "cloud": "yes"
+      },
+      "notes": "DANIEL'S PICK — the one he actually uses on Android, added 2026-09-22 on his recommendation rather than from the stars list. The only closed-source entry in the roundup: Play Store only, no public repository, so nothing below was read from source and it cannot be starred on GitHub. Free during early access with no sign-up. Covers both form factors at once — a voice IME and an accessibility-driven system-wide floating toolbar that reads the focused field and cursor position, and suppresses itself in password and number fields. Three power options in one app: a built-in free dictation service (Groq) so it works before you configure anything, your own keys for OpenAI, Deepgram and custom OpenAI-compatible providers, or downloadable local models including Parakeet v2 and v3. Configuration is profile-based — each profile pins transcription provider, post-processing provider, model, language, custom prompt and text-replacement rules — which is the 'building blocks, not fixed configurations' design its authors describe, and is closer to Superwhisper's model than to anything else here. Crash-tolerant: audio survives the app being force-killed mid-dictation. Quick Settings tile. Whether it degrades from cloud to local automatically is not documented.",
+      "evidence": [
+        "https://whisperian.app",
+        "https://play.google.com/store/apps/details?id=app.whisperian.client"
+      ]
+    },
+    {
       "id": "whisperime",
       "name": "whisperIME",
       "slug": "woheller69/whisperIME",
       "url": "https://github.com/woheller69/whisperIME",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "MIT",
@@ -1385,7 +1499,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -1411,6 +1526,7 @@
       "slug": "woheller69/whisperIMEplus",
       "url": "https://github.com/woheller69/whisperIMEplus",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "GPL-3.0",
@@ -1425,7 +1541,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -1451,6 +1568,7 @@
       "slug": "alex-vt/WhisperInput",
       "url": "https://github.com/alex-vt/WhisperInput",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "Java",
       "license": "MIT",
@@ -1465,7 +1583,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -1489,6 +1608,7 @@
       "slug": "MichaelMcCulloch/WhisperVoiceKeyboard",
       "url": "https://github.com/MichaelMcCulloch/WhisperVoiceKeyboard",
       "source": "stars-list",
+      "favourite": false,
       "category": "keyboard",
       "lang": "C",
       "license": "MIT",
@@ -1503,7 +1623,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "yes",
@@ -1527,6 +1648,7 @@
       "slug": "lam3y35/whispr-ai",
       "url": "https://github.com/lam3y35/whispr-ai",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "keyboard",
       "lang": "C#",
       "license": "NOASSERTION",
@@ -1541,7 +1663,8 @@
         "local": "no",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "yes"
+        "system_delegated": "yes",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -1565,6 +1688,7 @@
       "slug": "ccoreilly/LocalSTT",
       "url": "https://github.com/ccoreilly/LocalSTT",
       "source": "search-2026-09-22",
+      "favourite": false,
       "category": "service",
       "lang": "Java",
       "license": "GPL-3.0",
@@ -1579,7 +1703,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "no"
       },
       "models": {
         "whisper": "no",
@@ -1606,6 +1731,7 @@
       "slug": "mtib/android-local-transcribe",
       "url": "https://github.com/mtib/android-local-transcribe",
       "source": "stars-list",
+      "favourite": false,
       "category": "app",
       "lang": "Kotlin",
       "license": "NOASSERTION",
@@ -1620,7 +1746,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "no",
-        "system_delegated": "no"
+        "system_delegated": "no",
+        "byok": "n/a"
       },
       "models": {
         "whisper": "no",
@@ -1646,6 +1773,7 @@
       "slug": "soniqo/speech-android",
       "url": "https://github.com/soniqo/speech-android",
       "source": "stars-list",
+      "favourite": false,
       "category": "library",
       "lang": "Kotlin",
       "license": "Apache-2.0",
@@ -1660,7 +1788,8 @@
         "local": "yes",
         "cloud": "no",
         "fallback": "n/a",
-        "system_delegated": "n/a"
+        "system_delegated": "n/a",
+        "byok": "n/a"
       },
       "models": {
         "whisper": "no",
@@ -1688,6 +1817,7 @@
       "slug": "primaprashant/awesome-voice-typing",
       "url": "https://github.com/primaprashant/awesome-voice-typing",
       "source": "stars-list",
+      "favourite": false,
       "category": "resource",
       "lang": "Python",
       "license": "MIT",
@@ -1702,7 +1832,8 @@
         "local": "n/a",
         "cloud": "n/a",
         "fallback": "n/a",
-        "system_delegated": "n/a"
+        "system_delegated": "n/a",
+        "byok": "n/a"
       },
       "models": {
         "whisper": "n/a",

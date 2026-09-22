@@ -25,7 +25,52 @@ def g(value):
 
 
 def link(p):
-    return f"[{p['name']}]({p['url']})"
+    star = "⭐ " if p.get("favourite") else ""
+    return f"{star}[{p['name']}]({p['url']})"
+
+
+# Static shields.io badges. Colours are deliberately stable per concept so the
+# same idea reads the same everywhere: model family, then where inference runs.
+BADGE = "![{label}](https://img.shields.io/badge/{text}-{colour}?style=flat-square)"
+
+
+def badge(label, colour, text=None):
+    # shields.io needs - escaped as --, space as _
+    text = (text or label).replace("-", "--").replace(" ", "_")
+    return BADGE.format(label=label, text=text, colour=colour)
+
+
+def badges(p):
+    """Model badges then inference badges, for one project."""
+    m, e = p["models"], p["engine"]
+    out = []
+    if p.get("favourite"):
+        out.append(badge("favourite", "E4B400", "%E2%98%85_Daniel%27s_pick"))
+    if m["whisper"] == "yes":
+        out.append(badge("Whisper", "5436DA"))
+    if m["moonshine"] == "yes":
+        out.append(badge("Moonshine", "F5A623"))
+    if m["nvidia"] == "yes":
+        out.append(badge("NVIDIA", "76B900"))
+    for other in m["other"]:
+        # Only name the ASR engines, not VAD or cleanup models.
+        short = other.split(" (")[0]
+        if any(skip in short for skip in ("VAD", "denoise", "TTS")):
+            continue
+        out.append(badge(short, "6B7280"))
+    if e["local"] == "yes":
+        out.append(badge("Local", "2E7D32"))
+    if e["cloud"] == "yes":
+        out.append(badge("Cloud", "0277BD"))
+    if e.get("byok") == "yes":
+        out.append(badge("BYOK", "6A1B9A"))
+    if e["fallback"] == "yes":
+        out.append(badge("Auto fallback", "00897B"))
+    elif e["fallback"] == "partial":
+        out.append(badge("Partial fallback", "80CBC4"))
+    if e.get("system_delegated") == "yes":
+        out.append(badge("Delegated STT", "9E9E9E"))
+    return " ".join(out)
 
 
 def capability_table(keyboards):
@@ -44,14 +89,15 @@ def capability_table(keyboards):
 
 def recognition_table(keyboards):
     rows = [
-        "| Project | Local | Cloud | Auto fallback | Whisper | NVIDIA | Moonshine | Other ASR |",
-        "| --- | :---: | :---: | :---: | :---: | :---: | :---: | --- |",
+        "| Project | Local | Cloud | BYOK | Auto fallback | Whisper | NVIDIA | Moonshine | Other ASR |",
+        "| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | --- |",
     ]
     for p in keyboards:
         e, m = p["engine"], p["models"]
         other = ", ".join(m["other"]) if m["other"] else "—"
         rows.append(
-            f"| {link(p)} | {g(e['local'])} | {g(e['cloud'])} | {g(e['fallback'])} "
+            f"| {link(p)} | {g(e['local'])} | {g(e['cloud'])} | {g(e.get('byok'))} "
+            f"| {g(e['fallback'])} "
             f"| {g(m['whisper'])} | {g(m['nvidia'])} | {g(m['moonshine'])} | {other} |"
         )
     return "\n".join(rows)
@@ -64,9 +110,10 @@ def postprocess_table(keyboards):
     ]
     for p in keyboards:
         l = p["llm_postprocess"]
+        stars = "—" if p["stars"] is None else p["stars"]
         rows.append(
             f"| {link(p)} | {g(l['local'])} | {g(l['cloud'])} | {p['models']['runtime']} "
-            f"| {p['license']} | {p['stars']} | {p['updated']} |"
+            f"| {p['license']} | {stars} | {p['updated']} |"
         )
     return "\n".join(rows)
 
@@ -74,9 +121,14 @@ def postprocess_table(keyboards):
 def notes_section(projects):
     out = []
     for p in projects:
-        out.append(f"### {p['name']}\n")
-        out.append(f"`{p['id']}` · <{p['url']}> · {p['license']} · {p['stars']}★ "
-                   f"· last commit {p['updated']}\n")
+        star = "⭐ " if p.get("favourite") else ""
+        out.append(f"### {star}{p['name']}\n")
+        b = badges(p)
+        if b:
+            out.append(b + "\n")
+        stars = f"{p['stars']}★ · " if p["stars"] is not None else ""
+        out.append(f"`{p['id']}` · <{p['url']}> · {p['license']} · {stars}"
+                   f"last updated {p['updated']}\n")
         out.append(p["notes"] + "\n")
     return "\n".join(out)
 

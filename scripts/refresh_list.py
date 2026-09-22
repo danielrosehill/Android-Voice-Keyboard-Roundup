@@ -117,7 +117,9 @@ def main():
     args = ap.parse_args()
 
     doc = json.loads(DATA.read_text())
-    known = {p["slug"]: p for p in doc["projects"]}
+    # Entries with no slug are not on GitHub at all (whisperian is Play-Store
+    # only), so they can never appear in — or disappear from — the stars list.
+    known = {p["slug"]: p for p in doc["projects"] if p.get("slug")}
     live = {e["slug"]: e for e in scrape_list()}
 
     added = sorted(set(live) - set(known))
