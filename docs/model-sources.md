@@ -142,6 +142,8 @@ Two things follow from that table and are worth holding onto:
   post-processing rather than recognition quality — with the caveat that v3 is
   the *default*, not the best English model (see the field notes above), and the
   projects that let you choose the weights are the ones that can be tuned.
-- **Moonshine appears nowhere.** Despite being the obvious small-footprint
-  candidate, no project in the list uses it as of 2026-09-22. That is a gap, not
-  an oversight in the data.
+- **Moonshine has exactly one implementation.** `whisper-speech-to-text` offers
+  Moonshine v2 as a second engine beside Whisper — English-only, claimed 5-40x
+  faster, in tiny/base/small/medium. Despite being the obvious small-footprint
+  candidate it appears nowhere else, in a zero-star project that a GitHub sweep
+  turned up rather than the stars list. Near-total absence, not total.

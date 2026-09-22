@@ -29,6 +29,7 @@ What kind of thing this is. Only `keyboard` rows appear in the main matrix.
 | Value | Meaning |
 | --- | --- |
 | `keyboard` | Ships an Android IME, or a floating-overlay dictation app. In the matrix. |
+| `service` | Ships no IME — only a `RecognitionService` and/or a `RECOGNIZE_SPEECH` handler, supplying recognition to whatever keyboard you already use. |
 | `app` | A dictation/transcription app with no text-injection path into other apps. |
 | `library` | An SDK for building one of the above. |
 | `resource` | A list, index or reference. Not software you install. |
