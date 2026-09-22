@@ -141,7 +141,12 @@ Reading down the columns rather than across the rows:
   it bridges them. Everything else makes you choose a mode up front.
 - **Whisper is losing to NVIDIA Parakeet on-device.** Whisper still dominates
   the cloud rows because that is what Groq and OpenAI serve; the local rows are
-  overwhelmingly Parakeet TDT 0.6B v3 via sherpa-onnx.
+  overwhelmingly Parakeet TDT 0.6B v3 via sherpa-onnx. Note that v3 is the
+  *default*, not the best choice for English dictation — v2 is, in practice —
+  and only `ramblr` and `parakeet-voice-android` give you the option. See
+  [`docs/model-sources.md`](docs/model-sources.md), where the decisive variable
+  turns out to be decoder architecture and context-buffer behaviour rather than
+  model family.
 - **Moonshine appears nowhere.** Not in any project in the list, as of
   2026-09-22.
 - **Gboard cannot be redirected.** Three separate projects document it
@@ -199,7 +204,7 @@ A fork of offline-voice-input carrying a mostly unedited upstream README — the
 
 `parakeet-voice-android` · <https://github.com/mpnikhil/parakeet-voice-android> · NOASSERTION · 4★ · last commit 2026-04-20
 
-Small and direct. Its selling point is the RecognitionService implementation: set it as the system default voice input and Gboard's own mic button transcribes locally, keeping Gboard for typing. English only — it ships Parakeet TDT v2, though the README names the one-line change to swap in multilingual v3 at ~3% WER cost on English. arm64-v8a only. Offers the best verification trick in the list: turn on airplane mode and dictate.
+Small and direct. Its selling point is the RecognitionService implementation: set it as the system default voice input and Gboard's own mic button transcribes locally, keeping Gboard for typing. English only — it ships Parakeet TDT v2, and the README names the one-line change to swap in multilingual v3 at ~3% WER cost on English. Do not take that as an upgrade: v2 is the better English model in practice (see docs/model-sources.md), so shipping it is a point in this project's favour rather than a limitation. arm64-v8a only. Offers the best verification trick in the list: turn on airplane mode and dictate.
 
 ### Polished Recognition
 

@@ -14,18 +14,38 @@
       "license": "Apache-2.0",
       "stars": 803,
       "updated": "2026-09-20",
-      "form": { "voice_ime": "yes", "full_keyboard": "partial", "floating_button": "yes" },
-      "engine": { "local": "yes", "cloud": "yes", "fallback": "yes", "system_delegated": "yes" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "partial",
+        "floating_button": "yes"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "yes",
+        "fallback": "yes",
+        "system_delegated": "yes"
+      },
       "models": {
         "whisper": "unknown",
         "moonshine": "no",
         "nvidia": "yes",
-        "other": ["SenseVoice", "FunASR Nano", "Qwen3-ASR", "FireRedASR", "X-ASR"],
+        "other": [
+          "SenseVoice",
+          "FunASR Nano",
+          "Qwen3-ASR",
+          "FireRedASR",
+          "X-ASR"
+        ],
         "runtime": "unknown"
       },
-      "llm_postprocess": { "local": "unknown", "cloud": "yes" },
+      "llm_postprocess": {
+        "local": "unknown",
+        "cloud": "yes"
+      },
       "notes": "The most feature-complete of the set. 18 ASR providers, 12 cloud and 6 local, with an explicit primary/backup arrangement and a resident local engine as the last resort (主备与本地兜底) — the clearest automatic cloud-to-local fallback in the list. The floating ball (悬浮球) is the accessibility-overlay kind and works over any other IME. full_keyboard is partial: the layout is a configurable key pool and AI edit panel, not a general alphabet keyboard. Also exposes itself to third-party apps over SpeechRecognizer and AIDL, and can drive Fcitx/Rime forks. Has a paid Pro tier on Play; the repo is the free app.",
-      "evidence": ["https://github.com/BryceWG/BiBi-Keyboard/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/BryceWG/BiBi-Keyboard/blob/main/README.md"
+      ]
     },
     {
       "id": "fluence",
@@ -37,18 +57,35 @@
       "license": "AGPL-3.0",
       "stars": 15,
       "updated": "2026-09-21",
-      "form": { "voice_ime": "no", "full_keyboard": "no", "floating_button": "yes" },
-      "engine": { "local": "yes", "cloud": "yes", "fallback": "no", "system_delegated": "no" },
+      "form": {
+        "voice_ime": "no",
+        "full_keyboard": "no",
+        "floating_button": "yes"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "yes",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
       "models": {
         "whisper": "yes",
         "moonshine": "no",
         "nvidia": "no",
-        "other": ["SenseVoice-Small (offline)", "Groq whisper-large-v3 (cloud)"],
+        "other": [
+          "SenseVoice-Small (offline)",
+          "Groq whisper-large-v3 (cloud)"
+        ],
         "runtime": "sherpa-onnx"
       },
-      "llm_postprocess": { "local": "no", "cloud": "yes" },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "yes"
+      },
       "notes": "Deliberately not an IME at all — the pitch is that you keep your own keyboard and a glassmorphic bubble follows the cursor. Cloud and offline are a toggle, not a fallback chain. Agent Mode (Llama 3.3 70B via Groq) takes spoken commands like 'delete the last two sentences' and edits in place, which nothing else here does.",
-      "evidence": ["https://github.com/raviumeshkulkarni-web/Fluence-Android/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/raviumeshkulkarni-web/Fluence-Android/blob/main/README.md"
+      ]
     },
     {
       "id": "futo-keyboard",
@@ -60,12 +97,32 @@
       "license": "FUTO Source First 1.1 (not OSI-approved)",
       "stars": 3238,
       "updated": "2026-09-14",
-      "form": { "voice_ime": "no", "full_keyboard": "yes", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": [], "runtime": "whisper.cpp" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "no",
+        "full_keyboard": "yes",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [],
+        "runtime": "whisper.cpp"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "By far the most-starred and the most mature keyboard here — a LatinIME fork with FUTO Voice Input built in. Voice is a mode inside the keyboard rather than a separate voice IME, so it consumes the voice-IME slot rather than filling it; you can force it to delegate to the standalone app by disabling built-in voice input. Source-available, not open source: the licence is FUTO Source First 1.1 and PRs need a CLA. This repo is a mirror of an internal GitLab.",
-      "evidence": ["https://github.com/futo-org/android-keyboard/blob/master/README.md"]
+      "evidence": [
+        "https://github.com/futo-org/android-keyboard/blob/master/README.md"
+      ]
     },
     {
       "id": "futo-voice-input",
@@ -77,12 +134,32 @@
       "license": "FUTO Source First 1.0 (not OSI-approved)",
       "stars": 327,
       "updated": "2025-09-16",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": [], "runtime": "whisper.cpp" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [],
+        "runtime": "whisper.cpp"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "The reference implementation of the voice-IME pattern, and the source of the keyboard-compatibility table everyone else repeats. Registers both as a voice-subtype IME and as a RECOGNIZE_SPEECH intent handler; the intent path opens a centred floating window, which is a system dialog and not an accessibility overlay. Does NOT implement SpeechRecognizer. Development has largely moved to FUTO Keyboard — last touched 2025-09-16, the only stale entry besides whispervoicekeyboard. 17 languages, capped at Whisper languages with >1000 training hours.",
-      "evidence": ["https://github.com/futo-org/voice-input/blob/master/README.md"]
+      "evidence": [
+        "https://github.com/futo-org/voice-input/blob/master/README.md"
+      ]
     },
     {
       "id": "local-transcribe",
@@ -94,12 +171,34 @@
       "license": "NOASSERTION",
       "stars": 2,
       "updated": "2026-07-09",
-      "form": { "voice_ime": "no", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "yes", "other": ["Silero VAD"], "runtime": "sherpa-onnx" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "no",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [
+          "Silero VAD"
+        ],
+        "runtime": "sherpa-onnx"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "Not a keyboard and not an IME — a recorder with live transcription and a share-sheet export. Included because it is the strictest privacy position in the list: the model is bundled inside the APK and the app holds no INTERNET permission at all, so egress is impossible at the OS level. Expect ~1.4 GB installed. Kept out of the matrix; use it as the reference for what bundling costs.",
-      "evidence": ["https://github.com/mtib/android-local-transcribe/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/mtib/android-local-transcribe/blob/main/README.md"
+      ]
     },
     {
       "id": "offline-voice-input",
@@ -111,12 +210,32 @@
       "license": "MIT",
       "stars": 302,
       "updated": "2026-07-19",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "unknown", "moonshine": "no", "nvidia": "yes", "other": [], "runtime": "transcribe.cpp (ggml) via a Rust core" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "unknown",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [],
+        "runtime": "transcribe.cpp (ggml) via a Rust core"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "The best-integrated of the pure on-device ones: it plugs into Android speech in all three ways at once — RECOGNIZE_SPEECH popup, RecognitionService, and a voice IME — so it works from SwiftKey's mic, from website voice search, and from the keyboard switcher. The README's keyboard-by-keyboard notes were verified against each keyboard's source by the author. Also does live subtitles over screen capture. On Play as well as GitHub. Supports loading custom speech models.",
-      "evidence": ["https://github.com/notune/android_transcribe_app/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/notune/android_transcribe_app/blob/main/README.md"
+      ]
     },
     {
       "id": "outspoke",
@@ -128,12 +247,34 @@
       "license": "GPL-3.0",
       "stars": 85,
       "updated": "2026-08-29",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "yes", "other": ["Silero VAD v4"], "runtime": "onnxruntime" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [
+          "Silero VAD v4"
+        ],
+        "runtime": "onnxruntime"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "The cleanest single-purpose voice IME: Parakeet only, offline only, no LLM, no cloud path to misconfigure. Progressive partial results while you speak, hold-to-talk or tap-to-toggle, and a microphone-calibration screen that ranks every mic on the device by capture fidelity and picks the best — nothing else in the list does that. Architecture is built around a swappable SpeechEngine interface, so a second model backend is one class away. Needs Android 11+, 4 GB RAM, ~750 MB storage.",
-      "evidence": ["https://github.com/minburg/outspoke/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/minburg/outspoke/blob/main/README.md"
+      ]
     },
     {
       "id": "parakeeb",
@@ -145,12 +286,32 @@
       "license": "MIT",
       "stars": 6,
       "updated": "2026-07-18",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "yes", "other": [], "runtime": "transcribe-rs / onnxruntime" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [],
+        "runtime": "transcribe-rs / onnxruntime"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "A fork of offline-voice-input carrying a mostly unedited upstream README — the badges and package name still point at notune's app, so read it as inheriting that project's behaviour rather than describing its own. Its actual contribution is ONNX Runtime execution-provider tuning: the EP list and graph-optimisation level are settable at runtime over adb setprop without a rebuild, and the author measured that NNAPI/Darwinn on a Pixel 8a is slower than XNNPACK for the int8 Parakeet model. Worth reading for that finding even if you run something else.",
-      "evidence": ["https://github.com/surma/parakeeb/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/surma/parakeeb/blob/main/README.md"
+      ]
     },
     {
       "id": "parakeet-voice-android",
@@ -162,12 +323,34 @@
       "license": "NOASSERTION",
       "stars": 4,
       "updated": "2026-04-20",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "yes", "other": ["Silero VAD"], "runtime": "sherpa-onnx" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
-      "notes": "Small and direct. Its selling point is the RecognitionService implementation: set it as the system default voice input and Gboard's own mic button transcribes locally, keeping Gboard for typing. English only — it ships Parakeet TDT v2, though the README names the one-line change to swap in multilingual v3 at ~3% WER cost on English. arm64-v8a only. Offers the best verification trick in the list: turn on airplane mode and dictate.",
-      "evidence": ["https://github.com/mpnikhil/parakeet-voice-android/blob/main/README.md"]
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [
+          "Silero VAD"
+        ],
+        "runtime": "sherpa-onnx"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
+      "notes": "Small and direct. Its selling point is the RecognitionService implementation: set it as the system default voice input and Gboard's own mic button transcribes locally, keeping Gboard for typing. English only — it ships Parakeet TDT v2, and the README names the one-line change to swap in multilingual v3 at ~3% WER cost on English. Do not take that as an upgrade: v2 is the better English model in practice (see docs/model-sources.md), so shipping it is a point in this project's favour rather than a limitation. arm64-v8a only. Offers the best verification trick in the list: turn on airplane mode and dictate.",
+      "evidence": [
+        "https://github.com/mpnikhil/parakeet-voice-android/blob/main/README.md"
+      ]
     },
     {
       "id": "polished-recognition",
@@ -179,12 +362,32 @@
       "license": "MIT",
       "stars": 7,
       "updated": "2026-09-21",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "no", "cloud": "yes", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": [], "runtime": "n/a (cloud)" },
-      "llm_postprocess": { "local": "yes", "cloud": "yes" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "no",
+        "cloud": "yes",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [],
+        "runtime": "n/a (cloud)"
+      },
+      "llm_postprocess": {
+        "local": "yes",
+        "cloud": "yes"
+      },
       "notes": "Cloud STT only — the local option is for the polish step (Ollama or LM Studio over the OpenAI contract), not for recognition, so a claim of 'or run a local model' should not be read as on-device ASR. 18 provider presets and dynamic model lists off each provider's /v1/models. Recording starts the instant you switch to the keyboard, and survives switching away to your typing keyboard and back. Raw mode skips the LLM. On F-Droid; the Play build is closed testing and needs 12 continuously opted-in testers.",
-      "evidence": ["https://github.com/georgernstgraf/polished-recognition/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/georgernstgraf/polished-recognition/blob/main/README.md"
+      ]
     },
     {
       "id": "ramblr",
@@ -196,18 +399,40 @@
       "license": "GPL-3.0",
       "stars": 51,
       "updated": "2026-09-22",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "yes" },
-      "engine": { "local": "yes", "cloud": "yes", "fallback": "partial", "system_delegated": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "yes"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "yes",
+        "fallback": "partial",
+        "system_delegated": "no"
+      },
       "models": {
         "whisper": "yes",
         "moonshine": "no",
         "nvidia": "yes",
-        "other": ["Parakeet TDT 0.6B v3", "Parakeet Unified 0.6B", "Canary 180M Flash", "Parakeet 110M", "gpt-4o-transcribe", "Gemini"],
+        "other": [
+          "Parakeet TDT 0.6B v3",
+          "Parakeet Unified 0.6B",
+          "Canary 180M Flash",
+          "Parakeet 110M",
+          "gpt-4o-transcribe",
+          "Gemini"
+        ],
         "runtime": "sherpa-onnx + llama.cpp"
       },
-      "llm_postprocess": { "local": "yes", "cloud": "yes" },
+      "llm_postprocess": {
+        "local": "yes",
+        "cloud": "yes"
+      },
       "notes": "The most thoroughly engineered project in the list and the only one shipping ADRs and field latency data. Five independent ways to trigger dictation (floating ring, voice IME, accessibility button / volume-hold, QS tile, text-selection menu), of which the IME and the selection menu need no accessibility grant. Transcription and cleanup are chosen independently, so local STT plus cloud cleanup is a normal setup. fallback is 'partial' on purpose: the ordered waterfall with on-device as the floor applies to CLEANUP only — transcription is a single configured provider with no automatic degradation. Chain capped at 8 s, tuned from 34 days of p99 data. Four local ASR models and two local cleanup models, all downloaded on demand, none bundled.",
-      "evidence": ["https://github.com/trevornk/ramblr/blob/main/README.md", "docs/adr/0001-cleanup-waterfall.md"]
+      "evidence": [
+        "https://github.com/trevornk/ramblr/blob/main/README.md",
+        "docs/adr/0001-cleanup-waterfall.md"
+      ]
     },
     {
       "id": "sonderkey",
@@ -219,12 +444,32 @@
       "license": "GPL-3.0",
       "stars": 8,
       "updated": "2026-08-30",
-      "form": { "voice_ime": "no", "full_keyboard": "yes", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "yes", "other": [], "runtime": "sherpa-onnx" },
-      "llm_postprocess": { "local": "no", "cloud": "yes" },
+      "form": {
+        "voice_ime": "no",
+        "full_keyboard": "yes",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [],
+        "runtime": "sherpa-onnx"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "yes"
+      },
       "notes": "HeliBoard/LeanType lineage, so a genuine full keyboard with glide typing, clipboard history and a text expander, plus on-device Parakeet dictation you can type alongside — pause mode leaves the keys usable mid-turn, and spacing/capitalisation can be switched off for code and shell commands. Cloud is LLM-only (Gemini by default, Groq, any OpenAI-compatible) for proofread and translate; STT never goes to the cloud. Ships an Offline build variant with no INTERNET permission in the manifest at all. Its 'floating keyboard' is a draggable IME panel, not an accessibility mic overlay. English-only voice for now.",
-      "evidence": ["https://github.com/Verisonder/SonderKey/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/Verisonder/SonderKey/blob/main/README.md"
+      ]
     },
     {
       "id": "tobiboard",
@@ -236,12 +481,34 @@
       "license": "GPL-3.0",
       "stars": 3,
       "updated": "2026-09-14",
-      "form": { "voice_ime": "no", "full_keyboard": "yes", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "yes", "fallback": "unknown", "system_delegated": "no" },
-      "models": { "whisper": "unknown", "moonshine": "no", "nvidia": "yes", "other": ["OpenRouter and PayPerQ cloud models"], "runtime": "sherpa-onnx" },
-      "llm_postprocess": { "local": "yes", "cloud": "yes" },
+      "form": {
+        "voice_ime": "no",
+        "full_keyboard": "yes",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "yes",
+        "fallback": "unknown",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "unknown",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [
+          "OpenRouter and PayPerQ cloud models"
+        ],
+        "runtime": "sherpa-onnx"
+      },
+      "llm_postprocess": {
+        "local": "yes",
+        "cloud": "yes"
+      },
       "notes": "HeliBoard fork whose distinguishing move is on-device text rewriting as well as on-device dictation — a local LLM (547 MB to 1.6 GB depending on choice) fixes selected text with no API key, which nothing else here does locally. Installs side by side with HeliBoard. Both features ship OFF; enabling them means a 670 MB speech download plus the text model. Cloud providers are opt-in for larger models, and a custom transcription prompt is available on cloud only — the on-device model takes no prompt. Has its own F-Droid repo at leinss.xyz/TobiBoard/repo. Whether it degrades cloud-to-local automatically is not stated.",
-      "evidence": ["https://github.com/leinss/TobiBoard/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/leinss/TobiBoard/blob/main/README.md"
+      ]
     },
     {
       "id": "transcribro",
@@ -253,12 +520,34 @@
       "license": "ISC",
       "stars": 750,
       "updated": "2025-08-29",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": ["Silero VAD"], "runtime": "whisper.cpp" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [
+          "Silero VAD"
+        ],
+        "runtime": "whisper.cpp"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "The security-hardened option: distributed through Accrescent, with the signing-certificate SHA-256 published in the README and cross-posted to Bluesky so the website alone does not have to be trusted. Voice IME plus a speech-to-text service other apps can select. English only, with multi-language tracked in issue #18. Second-most-starred after FUTO Keyboard. Last commit 2025-08-29 — quiet for about a year, so check it is still moving before committing to it.",
-      "evidence": ["https://github.com/soupslurpr/Transcribro/blob/master/README.md"]
+      "evidence": [
+        "https://github.com/soupslurpr/Transcribro/blob/master/README.md"
+      ]
     },
     {
       "id": "translander",
@@ -270,12 +559,32 @@
       "license": "Apache-2.0",
       "stars": 11,
       "updated": "2026-02-08",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "yes" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "yes", "other": [], "runtime": "sherpa-onnx" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "yes"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [],
+        "runtime": "sherpa-onnx"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "The only project that is offline-only AND offers all four input surfaces: voice IME, RecognitionService, RECOGNIZE_SPEECH intent, accessibility floating mic, plus the system navigation-bar accessibility button. Falls back to the clipboard when no text field has focus. Uniquely, it also transcribes voice messages from files — share/open-with, or folder monitoring that watches e.g. Music/Signal and pops a transcription when a new voice note lands. Custom word-correction dictionary for recurring recognition errors. 25 languages with auto-detect. Author states it was largely built with Claude Code.",
-      "evidence": ["https://github.com/hatsch/TranSlander/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/hatsch/TranSlander/blob/main/README.md"
+      ]
     },
     {
       "id": "voice-keyboard",
@@ -287,12 +596,35 @@
       "license": "MIT",
       "stars": 14,
       "updated": "2026-09-22",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "no", "cloud": "yes", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": ["Groq whisper-large-v3-turbo (default)", "Mistral voxtral-mini"], "runtime": "n/a (cloud)" },
-      "llm_postprocess": { "local": "no", "cloud": "yes" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "no",
+        "cloud": "yes",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [
+          "Groq whisper-large-v3-turbo (default)",
+          "Mistral voxtral-mini"
+        ],
+        "runtime": "n/a (cloud)"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "yes"
+      },
       "notes": "Cloud-only, any OpenAI-compatible Whisper endpoint, Groq free tier by default. Its offline story is durability rather than fallback and the distinction matters: recordings that cannot be transcribed are persisted to disk and resent to the SAME cloud endpoint when a validated connection returns, surviving reboots and app rebuilds. That is engine.fallback = no. Strong keyboard ergonomics for a voice IME — punctuation keys that swallow the preceding space, accelerating backspace, smart spacing, per-recording post-processing toggles, custom vocabulary biasing, multi-language cycling. The panel has no letter keys by design.",
-      "evidence": ["https://github.com/rustemar/voice-keyboard/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/rustemar/voice-keyboard/blob/main/README.md"
+      ]
     },
     {
       "id": "voxboard",
@@ -304,10 +636,28 @@
       "license": "Apache-2.0",
       "stars": 4,
       "updated": "2026-07-08",
-      "form": { "voice_ime": "no", "full_keyboard": "yes", "floating_button": "no" },
-      "engine": { "local": "no", "cloud": "no", "fallback": "no", "system_delegated": "yes" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "no", "other": [], "runtime": "n/a (delegated)" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "no",
+        "full_keyboard": "yes",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "no",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "yes"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [],
+        "runtime": "n/a (delegated)"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "CAUTION — the catalogue description advertises 'on-device voice input', and that is not what the code does. The README never mentions voice at all, and app/src/main/kotlin/com/voxboard/ime/voice/VoiceInputHandler.kt calls Android's SpeechRecognizer, whose own comment says it 'works offline if the user has downloaded offline speech recognition data' and that replacing it with whisper.cpp is future work. On a stock device that resolves to Google's cloud. Treat it as a FlorisBoard v0.5.2 fork with a normal mic key. The keyboard itself is fine — glide typing, Material You, no INTERNET permission — the voice claim is the problem.",
       "evidence": [
         "https://github.com/Predator04/VoxBoard/blob/main/README.md",
@@ -324,12 +674,34 @@
       "license": "Apache-2.0",
       "stars": 8,
       "updated": "2026-09-10",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "no", "cloud": "yes", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": ["gpt-4o-transcribe"], "runtime": "n/a (cloud)" },
-      "llm_postprocess": { "local": "no", "cloud": "yes" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "no",
+        "cloud": "yes",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [
+          "gpt-4o-transcribe"
+        ],
+        "runtime": "n/a (cloud)"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "yes"
+      },
       "notes": "Cloud BYOK, Whisper via Groq/OpenAI or any compatible endpoint. Shows the raw transcription and the LLM-refined version side by side in the candidate bar and lets you pick — the only project that surfaces both. Auto Tone detects the foreground app and switches register (casual for messaging, formal for email) on customisable per-app rules. Speak-to-edit rewrites a selection in place. Ten voice commands run locally with no API call. Only two permissions, INTERNET and RECORD_AUDIO. UI is zh-TW/en/ja.",
-      "evidence": ["https://github.com/soanseng/voxpen-android/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/soanseng/voxpen-android/blob/main/README.md"
+      ]
     },
     {
       "id": "whisperboard",
@@ -341,12 +713,34 @@
       "license": "GPL-3.0",
       "stars": 3,
       "updated": "2026-05-15",
-      "form": { "voice_ime": "no", "full_keyboard": "yes", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "yes", "fallback": "yes", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": ["Deepgram Nova-3 (cloud)"], "runtime": "whisper.cpp v1.8.3" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "no",
+        "full_keyboard": "yes",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "yes",
+        "fallback": "yes",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [
+          "Deepgram Nova-3 (cloud)"
+        ],
+        "runtime": "whisper.cpp v1.8.3"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "The clearest statement of automatic fallback in the list: an Auto mode that 'uses cloud when available, falls back to local offline'. Cloud is Deepgram Nova-3 over a WebSocket at roughly 300 ms; local Whisper takes 2-5 s. Full HeliBoard underneath, so a real keyboard. Three local models, base/small/small-FR, downloaded in-app; French, English, Dutch, German. No LLM step. The most direct answer if what you want is one keyboard that is fast online and still works on a plane.",
-      "evidence": ["https://github.com/david-digitis/WhisperBoard/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/david-digitis/WhisperBoard/blob/main/README.md"
+      ]
     },
     {
       "id": "whispervoicekeyboard",
@@ -358,12 +752,32 @@
       "license": "MIT",
       "stars": 52,
       "updated": "2023-06-10",
-      "form": { "voice_ime": "yes", "full_keyboard": "no", "floating_button": "no" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "no", "system_delegated": "no" },
-      "models": { "whisper": "yes", "moonshine": "no", "nvidia": "no", "other": [], "runtime": "TFLite + Rust/FFmpeg" },
-      "llm_postprocess": { "local": "no", "cloud": "no" },
+      "form": {
+        "voice_ime": "yes",
+        "full_keyboard": "no",
+        "floating_button": "no"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "no",
+        "system_delegated": "no"
+      },
+      "models": {
+        "whisper": "yes",
+        "moonshine": "no",
+        "nvidia": "no",
+        "other": [],
+        "runtime": "TFLite + Rust/FFmpeg"
+      },
+      "llm_postprocess": {
+        "local": "no",
+        "cloud": "no"
+      },
       "notes": "ABANDONED — last commit 2023-06-10 and the README opens with the author's own TODO saying it predates whisper.cpp and needs rewriting on it. Historical interest only: it is the earliest attempt in this list, Whisper TFLite with a Rust/FFmpeg pipeline, and it explains why every later project uses whisper.cpp or sherpa-onnx instead. Do not install.",
-      "evidence": ["https://github.com/MichaelMcCulloch/WhisperVoiceKeyboard/blob/master/README.md"]
+      "evidence": [
+        "https://github.com/MichaelMcCulloch/WhisperVoiceKeyboard/blob/master/README.md"
+      ]
     },
     {
       "id": "awesome-voice-typing",
@@ -375,12 +789,32 @@
       "license": "MIT",
       "stars": 193,
       "updated": "2026-09-22",
-      "form": { "voice_ime": "n/a", "full_keyboard": "n/a", "floating_button": "n/a" },
-      "engine": { "local": "n/a", "cloud": "n/a", "fallback": "n/a", "system_delegated": "n/a" },
-      "models": { "whisper": "n/a", "moonshine": "n/a", "nvidia": "n/a", "other": [], "runtime": "n/a" },
-      "llm_postprocess": { "local": "n/a", "cloud": "n/a" },
+      "form": {
+        "voice_ime": "n/a",
+        "full_keyboard": "n/a",
+        "floating_button": "n/a"
+      },
+      "engine": {
+        "local": "n/a",
+        "cloud": "n/a",
+        "fallback": "n/a",
+        "system_delegated": "n/a"
+      },
+      "models": {
+        "whisper": "n/a",
+        "moonshine": "n/a",
+        "nvidia": "n/a",
+        "other": [],
+        "runtime": "n/a"
+      },
+      "llm_postprocess": {
+        "local": "n/a",
+        "cloud": "n/a"
+      },
       "notes": "Not software — a cross-platform curated index of open-source voice-typing tools covering desktop, mobile and CLI, with an auto-updated 30-day trending table and links to the relevant HN threads. Useful as an upstream feed for this roundup: watch its Android section for projects worth adding here. Its own top picks are desktop-first (Handy, VoiceInk, FluidVoice), so it does not answer the Android question directly.",
-      "evidence": ["https://github.com/primaprashant/awesome-voice-typing/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/primaprashant/awesome-voice-typing/blob/main/README.md"
+      ]
     },
     {
       "id": "speech-android",
@@ -392,12 +826,36 @@
       "license": "Apache-2.0",
       "stars": 159,
       "updated": "2026-09-15",
-      "form": { "voice_ime": "n/a", "full_keyboard": "n/a", "floating_button": "n/a" },
-      "engine": { "local": "yes", "cloud": "no", "fallback": "n/a", "system_delegated": "n/a" },
-      "models": { "whisper": "no", "moonshine": "no", "nvidia": "yes", "other": ["Parakeet-EOU 120M", "DeepFilterNet3 (denoise)", "TTS and VAD models"], "runtime": "onnxruntime / speech-core" },
-      "llm_postprocess": { "local": "n/a", "cloud": "n/a" },
+      "form": {
+        "voice_ime": "n/a",
+        "full_keyboard": "n/a",
+        "floating_button": "n/a"
+      },
+      "engine": {
+        "local": "yes",
+        "cloud": "no",
+        "fallback": "n/a",
+        "system_delegated": "n/a"
+      },
+      "models": {
+        "whisper": "no",
+        "moonshine": "no",
+        "nvidia": "yes",
+        "other": [
+          "Parakeet-EOU 120M",
+          "DeepFilterNet3 (denoise)",
+          "TTS and VAD models"
+        ],
+        "runtime": "onnxruntime / speech-core"
+      },
+      "llm_postprocess": {
+        "local": "n/a",
+        "cloud": "n/a"
+      },
       "notes": "An SDK, not an app — the piece you would build a keyboard on rather than install. Covers the whole local pipeline: VAD, streaming STT, TTS and noise cancellation, all ONNX, no cloud. Interesting for the small end: Parakeet-EOU 120M at 153 MB does streaming STT with end-of-utterance detection, which is the shape a low-latency IME wants, and the demo runs VAD to STT to a small LM to TTS in 1.2 GB of RAM. Has an Apple counterpart (speech-swift) and a Linux/embedded build.",
-      "evidence": ["https://github.com/soniqo/speech-android/blob/main/README.md"]
+      "evidence": [
+        "https://github.com/soniqo/speech-android/blob/main/README.md"
+      ]
     }
   ]
 }
